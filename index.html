@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="lawncaresite">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css" />
+	
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-resource.js"></script>
+	<!-- AngularJS Material CSS now available via Google CDN; version 1.0.7 used here -->
+	<!-- AngularJS Material Dependencies -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+	<!-- AngularJS Material Javascript now available via Google CDN; version 1.0.7 used here -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.7/angular-material.min.js"></script>
+	
+	<script src="/scripts/controllers.js"></script>
+	<script src="/scripts/factories.js"></script>
+	
+	<script src="/scripts/services.js"></script>
+	<script src="/scripts/app.js"></script>
+    <script src="/scripts/modal.js"></script>
+    <title>For All your Lawncare Needs</title>
+    <base href="/">
+</head>
+<body>
+	
+	<nav  id="navbar" class="navbar navbar-light" style="color: black;">
+        <div class="col-xs-6">
+       <a class="navlink" ng-href="/"> <img src="logo.png" id="logo" class="d-inline-block align-top" alt=""></a>
+    
+  </a>
+  </div>
+        <div class="col-xs-6">
+        <a class="navlink" ng-href="/">Home</a>
+        </div>
+        <div class="col-xs-6">
+        <a  class="navlink" ng-href="/about"  >About Us</a>    
+        </div>
+        <div class="col-xs-6">
+            <a  class="navlink" ng-href="/services" >Services</a>
+        </div>
+        <div class="col-xs-6">
+           <a  class="navlink" ng-href="/photos" >Photos</a> 
+        </div>
+        <div class="col-xs-6">
+           <a  class="navlink" ng-href="/contact" >Contact Us</a> 
+        </div>
+               
+                
+				
+			    
+                
+				
+    
+</nav>
+                <!--<a  class="nav-item nav-link" ng-href="/">Home</a>
+				<a  class="nav-item nav-link" ng-href="/menu">Menu</a>
+				<a  class="nav-item nav-link" ng-href="/about">About Us</a>
+                <a  class="nav-item nav-link" ng-href="/contact">Contact Us</a>
+				<a ng-href="/login">Employees</a>-->
+				
+			
+    <div ng-view></div>
+    <div class="main-container">
+    <footer class="section footer-classic navbar navbar-fixed-bottom context-dark bg-image" style="background: forestgreen;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                <p>We are a fast and friendly lawncare service with the skills to get your lawn looking amazing in no time.</p>
+                <!-- Rights-->
+                
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Contacts</h5>
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>612, First Avenue</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#">genericlawn@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd><a href="tel:#">+205-555-4444</a> <span>or</span> <a href="tel:#">+205-555-3333</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/photos">Photos</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--<div class="row no-gutters social-container">
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+          <div
+           class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+        </div>-->
+      </footer>
+</div>
+	<!--<div class="container-fluid myFooter fixed-bottom" id="myFooter">
+		<div class="row text-center">
+			
+			<div class="col-sm-2">
+				<h4><a ng-href="/login">Employees</a></h4>
+			</div>
+		</div>
+	</div>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="/styles.css" />
+</body>
+
+</html>

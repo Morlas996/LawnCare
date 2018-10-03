@@ -1,0 +1,262 @@
+.intro{
+    color: black;
+    font-weight: bold;
+    background-image: url('grass.jpeg');
+    height: 100%;
+}
+.intro::after{
+    content:"";
+
+opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+nav{
+    background-color: green;
+}
+.jobs{
+    position: relative;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+
+}
+.leftimg{
+    position: relative;
+    
+    width: 22em;
+    height: 18em;
+
+}
+#imageQuote{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('family.jpg');
+    height: 75%;
+    width: 40%;
+    position: relative;
+    left: 50%;
+    color: white;
+    text-align: center;
+}
+.relax{
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('lawnchair.jpg');
+    width: 25%;
+    height: 70%;
+    position: relative;
+    left: 19%;
+    top: 20%;
+    font-weight: bold;
+    font-style: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#carouselImage{
+    width: 300px;
+    height: 500px;
+    filter: brightness(50%);
+}
+#carouselExampleIndicators{
+    width: 75%;
+    position: relative;
+    left: 12.5%;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+.rightimg{
+    position: relative;
+    
+    width: 22em;
+    height: 18em;
+
+}
+#speil{
+    font-size: 1.2em;
+
+}
+.carouselText{
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: Impact, Charcoal, sans-serif;
+}
+.mower{
+    position: absolute;
+    left: 40%;
+width: 20%;
+height: 25%;
+bottom: 10%;
+}
+#logo{
+    width: 5em;
+    height: 5em;
+    position: absolutel;
+    left: 5%;
+    top: 5%;
+
+}
+a{
+    color: black;
+    font-size: 20px;
+}
+.care{
+    text-align: center;
+
+}
+h4{
+    text-align: center;
+}
+body{
+    background-color: lightgreen;
+}
+#about{
+    background-color: lightgreen;
+    
+    
+    width: 100%;
+    height: 100%
+}
+a:hover{
+  color:  red;
+  text-decoration: none;
+}
+.modalImg{
+    border-width: 0.5em;
+    border-color: black;
+    border-style: solid;
+    
+    position: relative;
+    left: 5%;
+    margin: 2em;
+    align-content: center;
+}
+/*modal styles*/
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.modal-backdrop{
+    display: none;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 180px;
+  /* must be same height as the footer */
+}
+
+#footer {
+  position: relative;
+  margin-top: -180px;
+  /* negative value of footer height */
+  height: 180px;
+  clear: both;
+  
+}
+
+
+
+
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+
+}
